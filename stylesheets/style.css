@@ -166,7 +166,7 @@ h1:after {
 
 /* line 187, ../sass/style.scss */
 #main {
-  padding: 2.4375em 1.875em;
+  padding: 2.4375em 1.875em 3.75em 1.875em;
 }
 /* line 190, ../sass/style.scss */
 #main section {
@@ -179,7 +179,7 @@ h1:after {
 
 /* line 201, ../sass/style.scss */
 .benefits {
-  margin: 0;
+  margin: 2.375em 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -187,25 +187,26 @@ h1:after {
 }
 /* line 209, ../sass/style.scss */
 .benefits li {
-  flex-basis: 33%;
+  flex-basis: 33.33%;
   display: flex;
   align-items: center;
-  padding: 0.625em 0;
+  padding: 0 0 2.5em 0;
 }
 /* line 216, ../sass/style.scss */
 .benefits .image {
-  flex-basis: 25%;
+  flex-basis: 32%;
   text-align: center;
+  margin: 0;
 }
-/* line 221, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .benefits .text {
-  line-height: 1.6875em;
+  line-height: 1.5041782729805016em;
   font-size: 1.121875em;
-  flex-basis: 75%;
-  padding: 0 0.8356545961002786em;
+  flex-basis: 68%;
+  padding: 0 0.44568245125348194em 0 0.8356545961002786em;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .job-opportunities article {
   display: flex;
   justify-content: space-between;
@@ -213,7 +214,7 @@ h1:after {
   padding: 1.5em 1.25em;
   border-bottom: solid 1px #b7b7b7;
 }
-/* line 239, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .job-opportunities article .heading {
   font-size: 1em;
   flex-basis: 90%;
@@ -221,7 +222,7 @@ h1:after {
   padding-right: 1.25em;
   line-height: 1.375em;
 }
-/* line 247, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .job-opportunities article .button {
   background: #fcaf17;
   color: #fff;
@@ -229,32 +230,32 @@ h1:after {
   font-size: 0.875em;
   padding: 0.536em 1.6428571428571428em;
 }
-/* line 255, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .job-opportunities article:nth-child(odd) {
   background: #e1e1e1;
 }
-/* line 259, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .job-opportunities article:hover {
   background: #fcaf17;
   cursor: pointer;
 }
-/* line 263, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .job-opportunities article:hover .button {
   color: #fcaf17;
   background: #fff;
   text-decoration: none;
 }
-/* line 271, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 .job-opportunities article:last-child {
   border-bottom: 0;
 }
-/* line 275, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .job-opportunities article p {
   flex-basis: 40%;
   margin: 0;
 }
 
-/* line 284, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 #footer {
   background: #707070;
   color: #fff;
@@ -262,42 +263,44 @@ h1:after {
   justify-content: space-between;
   align-items: center;
   padding: 1.875em;
+  height: 7.5em;
 }
-/* line 292, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 #footer .socials {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 298, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #footer .socials li {
   margin-right: 0.625em;
 }
-/* line 301, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 #footer .socials li:last-child {
   margin-right: 0;
 }
-/* line 307, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 #footer .socials a {
   text-indent: -9999px;
   display: block;
   width: 36px;
   height: 36px;
 }
-/* line 314, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 #footer .socials .fb {
   background-image: url("../images/socials/icon-fb.png");
 }
-/* line 318, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 #footer .socials .twitter {
   background-image: url("../images/socials/icon-twitter.png");
 }
-/* line 322, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 #footer .socials .youtube {
   background-image: url("../images/socials/icon-yt.png");
 }
-/* line 328, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 #footer address {
   margin: 0;
+  line-height: 1.6875em;
 }

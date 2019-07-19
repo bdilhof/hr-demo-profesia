@@ -185,7 +185,7 @@ h1 {
 }
 
 #main {
-  padding: 2.4375em 1.875em;
+  padding: 2.4375em 1.875em 3.75em 1.875em;
 
   section {
     margin: 0 0 2.5em 0;
@@ -200,29 +200,30 @@ h1 {
 
 .benefits {
 
-  margin: 0;
+  margin: 2.375em 0 0 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 
   li {
-    flex-basis: 33%;
+    flex-basis: 33.33%;
     display: flex;
     align-items: center;
-    padding: 0.625em 0;
+    padding: 0 0 2.5em 0;
   }
 
   .image {
-    flex-basis: 25%;
+    flex-basis: 32%;
     text-align: center;
+    margin: 0;
   }
 
   .text {
-    line-height: 1.6875em;
+    line-height: 1.5041782729805016em;
     font-size: 1.121875em;
-    flex-basis: 75%;
-    padding: 0 0.8356545961002786em;
+    flex-basis: 68%;
+    padding: 0 0.44568245125348194em 0 0.8356545961002786em;
   }
 
 }
@@ -288,6 +289,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding: $padding-main;
+  height: 7.5em;
 
   .socials {
     display: flex;
@@ -327,6 +329,7 @@ h1 {
 
   address {
     margin: 0;
+    line-height: 1.6875em;
   }
 
 }

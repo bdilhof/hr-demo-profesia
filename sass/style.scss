@@ -1,9 +1,7 @@
 $color-orange: #fcaf17;
 $color-red: #ed1c24;
 $color-brown: #4a433d;
-
 $padding-main: 1.875em;
-
 $transition: all 0.15s;
 
 body {
@@ -81,29 +79,29 @@ h1 {
       padding: 0;
       margin: 0;
 
-     li {
+      li {
 
-       a:link,
-       a:visited {
-         color: #000;
-       }
+        a:link,
+        a:visited {
+          color: #000;
+        }
 
-       a:hover,
-       a:active {
-         color: $color-orange;
-       }
+        a:hover,
+        a:active {
+          color: $color-orange;
+        }
 
-       &:after {
-         content: "|";
-         padding: 0 0.09523809523809523em;
+        &:after {
+          content: "|";
+          padding: 0 0.09523809523809523em;
 
-       }
+        }
 
-       &:last-child:after {
-         display: none;
-       }
+        &:last-child:after {
+          display: none;
+        }
 
-     }
+      }
 
     }
   }

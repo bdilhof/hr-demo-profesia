@@ -59,3 +59,27 @@
   }
 
 }
+
+@media (max-width: $max-width-mobile) {
+
+  .top-header {
+    justify-content: space-between;
+  }
+
+  .top-header .slogan {
+    display: none;
+  }
+
+  .top-header .lang-nav {
+    margin-right: 0;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .top-header {
+    padding: 0.9375em 0;
+  }
+
+}

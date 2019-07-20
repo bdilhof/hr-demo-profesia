@@ -32,7 +32,7 @@ h1 {
   &:after {
     content: " ";
     display: block;
-    width: 10.625em;
+    max-width: 10.625em;
     height: 1px;
     background: $color-orange;
     margin-top: 0.41379310344827586em;
@@ -50,6 +50,22 @@ h1 {
       margin: 0;
     }
 
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  #main {
+    padding: 2.4375em 0 3.75em 0;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  #main {
+    padding: 1.875em;
   }
 
 }

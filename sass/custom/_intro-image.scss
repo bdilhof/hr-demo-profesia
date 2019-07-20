@@ -36,3 +36,27 @@
   }
 
 }
+
+@media (max-width: 575px) {
+
+  .intro-image {
+    display: none;
+  }
+
+}
+
+@media (max-width: $max-width-mobile) {
+
+  .intro-image {
+    background-size: cover;
+  }
+
+  .intro-image .big-slogan {
+    font-size: 2em;
+  }
+
+  .intro-image .small-slogan {
+    font-size: 1em;
+  }
+
+}

@@ -5,7 +5,12 @@
   justify-content: space-between;
   align-items: center;
   padding: $padding-main;
-  height: 7.5em;
+  text-align: center;
+  flex-direction: column;
+
+  .logo {
+    margin-bottom: $padding-secondary;
+  }
 
   .socials {
     display: flex;
@@ -43,9 +48,38 @@
 
   }
 
-  address {
-    margin: 0;
+  .address {
+    margin: 0 0 $padding-secondary 0;
     line-height: 1.6875em;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  #footer {
+    max-height: 7.5em;
+    flex-direction: row;
+    text-align: left;
+
+    .logo,
+    .socials,
+    .address {
+      margin: 0;
+    }
+
+    .logo {
+      order: 1;
+    }
+
+    .socials {
+      order: 2;
+    }
+
+    .address {
+      order: 3;
+    }
+
   }
 
 }

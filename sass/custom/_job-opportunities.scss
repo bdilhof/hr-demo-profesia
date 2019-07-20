@@ -2,11 +2,15 @@
 
   article {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em 1.25em;
+    flex-direction: column;
+    padding: 1.5em 0;
     border-bottom: solid 1px #b7b7b7;
     transition: $transition;
+
+    .text-wrap {
+      margin-bottom: 0.625em;
+      padding-right: 1.25em;
+    }
 
     .heading {
       font-size: 1em;
@@ -22,10 +26,6 @@
       white-space: nowrap;
       font-size: 0.875em;
       padding: 0.536em 1.6428571428571428em;
-    }
-
-    &:nth-child(odd) {
-      background: #e1e1e1;
     }
 
     &:hover {
@@ -47,6 +47,35 @@
     p {
       flex-basis: 40%;
       margin: 0;
+    }
+
+  }
+
+  @media (min-width: 460px) {
+
+    article {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5em 1.25em;
+
+      &:nth-child(odd) {
+        background: #e1e1e1;
+      }
+
+    }
+
+    article .text-wrap {
+      margin-bottom: 0;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    article .text-wrap {
+      display: flex;
+      flex-basis: 130%;
     }
 
   }

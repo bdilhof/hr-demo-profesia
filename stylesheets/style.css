@@ -39,7 +39,7 @@ h1 {
 h1:after {
   content: " ";
   display: block;
-  width: 10.625em;
+  max-width: 10.625em;
   height: 1px;
   background: #fcaf17;
   margin-top: 0.41379310344827586em;
@@ -58,6 +58,18 @@ h1:after {
   margin: 0;
 }
 
+@media (min-width: 576px) {
+  /* line 59, ../sass/custom/_general.scss */
+  #main {
+    padding: 2.4375em 0 3.75em 0;
+  }
+}
+@media (max-width: 575px) {
+  /* line 67, ../sass/custom/_general.scss */
+  #main {
+    padding: 1.875em;
+  }
+}
 /* Page Components */
 /* line 1, ../sass/custom/_top-header.scss */
 .top-header {
@@ -111,6 +123,28 @@ h1:after {
   display: none;
 }
 
+@media (max-width: 767px) {
+  /* line 65, ../sass/custom/_top-header.scss */
+  .top-header {
+    justify-content: space-between;
+  }
+
+  /* line 69, ../sass/custom/_top-header.scss */
+  .top-header .slogan {
+    display: none;
+  }
+
+  /* line 73, ../sass/custom/_top-header.scss */
+  .top-header .lang-nav {
+    margin-right: 0;
+  }
+}
+@media (min-width: 576px) {
+  /* line 81, ../sass/custom/_top-header.scss */
+  .top-header {
+    padding: 0.9375em 0;
+  }
+}
 /* line 1, ../sass/custom/_intro-image.scss */
 .intro-image {
   background-color: #e1e0dc;
@@ -146,62 +180,105 @@ h1:after {
   font-size: 1.25em;
 }
 
-/* line 1, ../sass/custom/_nav.scss */
-#nav {
-  height: 3.75em;
+@media (max-width: 575px) {
+  /* line 42, ../sass/custom/_intro-image.scss */
+  .intro-image {
+    display: none;
+  }
 }
-/* line 5, ../sass/custom/_nav.scss */
+@media (max-width: 767px) {
+  /* line 50, ../sass/custom/_intro-image.scss */
+  .intro-image {
+    background-size: cover;
+  }
+
+  /* line 54, ../sass/custom/_intro-image.scss */
+  .intro-image .big-slogan {
+    font-size: 2em;
+  }
+
+  /* line 58, ../sass/custom/_intro-image.scss */
+  .intro-image .small-slogan {
+    font-size: 1em;
+  }
+}
+/* line 3, ../sass/custom/_nav.scss */
 #nav ul {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
   justify-content: space-around;
 }
-/* line 13, ../sass/custom/_nav.scss */
+/* line 10, ../sass/custom/_nav.scss */
 #nav li {
   flex-grow: 1;
   flex-basis: 0;
   text-align: center;
   background: #fcaf17;
-  margin-right: 1px;
+  margin-bottom: 1px;
 }
-/* line 21, ../sass/custom/_nav.scss */
+/* line 18, ../sass/custom/_nav.scss */
 #nav li:last-child {
   margin-right: 0;
 }
-/* line 27, ../sass/custom/_nav.scss */
+/* line 24, ../sass/custom/_nav.scss */
 #nav a,
 #nav a:link,
 #nav a:active {
   color: #000;
   height: 3em;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.05em;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 1em;
 }
-/* line 41, ../sass/custom/_nav.scss */
+/* line 38, ../sass/custom/_nav.scss */
 #nav a:hover,
 #nav a:active {
   color: #fff;
   background: #ed1c24;
   font-weight: bold;
 }
+@media (min-width: 576px) {
+  /* line 47, ../sass/custom/_nav.scss */
+  #nav #nav {
+    height: 3.75em;
+  }
+  /* line 51, ../sass/custom/_nav.scss */
+  #nav ul {
+    display: flex;
+  }
+  /* line 55, ../sass/custom/_nav.scss */
+  #nav li {
+    margin-right: 1px;
+  }
+}
+@media (min-width: 990px) {
+  /* line 63, ../sass/custom/_nav.scss */
+  #nav a,
+  #nav a:link,
+  #nav a:active {
+    font-size: 1.25em;
+  }
+}
 
 /* line 3, ../sass/custom/_job-opportunities.scss */
 .job-opportunities article {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5em 1.25em;
+  flex-direction: column;
+  padding: 1.5em 0;
   border-bottom: solid 1px #b7b7b7;
   transition: all 0.15s;
 }
-/* line 11, ../sass/custom/_job-opportunities.scss */
+/* line 10, ../sass/custom/_job-opportunities.scss */
+.job-opportunities article .text-wrap {
+  margin-bottom: 0.625em;
+  padding-right: 1.25em;
+}
+/* line 15, ../sass/custom/_job-opportunities.scss */
 .job-opportunities article .heading {
   font-size: 1em;
   flex-basis: 90%;
@@ -209,17 +286,13 @@ h1:after {
   padding-right: 1.25em;
   line-height: 1.375em;
 }
-/* line 19, ../sass/custom/_job-opportunities.scss */
+/* line 23, ../sass/custom/_job-opportunities.scss */
 .job-opportunities article .button {
   background: #fcaf17;
   color: #fff;
   white-space: nowrap;
   font-size: 0.875em;
   padding: 0.536em 1.6428571428571428em;
-}
-/* line 27, ../sass/custom/_job-opportunities.scss */
-.job-opportunities article:nth-child(odd) {
-  background: #e1e1e1;
 }
 /* line 31, ../sass/custom/_job-opportunities.scss */
 .job-opportunities article:hover {
@@ -241,34 +314,87 @@ h1:after {
   flex-basis: 40%;
   margin: 0;
 }
+@media (min-width: 460px) {
+  /* line 56, ../sass/custom/_job-opportunities.scss */
+  .job-opportunities article {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 1.25em;
+  }
+  /* line 62, ../sass/custom/_job-opportunities.scss */
+  .job-opportunities article:nth-child(odd) {
+    background: #e1e1e1;
+  }
+  /* line 68, ../sass/custom/_job-opportunities.scss */
+  .job-opportunities article .text-wrap {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* line 76, ../sass/custom/_job-opportunities.scss */
+  .job-opportunities article .text-wrap {
+    display: flex;
+    flex-basis: 130%;
+  }
+}
 
 /* line 1, ../sass/custom/_benefits.scss */
 .benefits {
   margin: 2.375em 0 0 0;
   padding: 0;
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
 }
-/* line 9, ../sass/custom/_benefits.scss */
+/* line 8, ../sass/custom/_benefits.scss */
 .benefits li {
-  flex-basis: 33.33%;
+  flex-basis: 50%;
   display: flex;
   align-items: center;
   padding: 0 0 2.5em 0;
 }
-/* line 16, ../sass/custom/_benefits.scss */
+/* line 15, ../sass/custom/_benefits.scss */
 .benefits .image {
-  flex-basis: 32%;
-  text-align: center;
+  flex-basis: 20%;
   margin: 0;
 }
-/* line 22, ../sass/custom/_benefits.scss */
+/* line 20, ../sass/custom/_benefits.scss */
 .benefits .text {
   line-height: 1.5041782729805016em;
-  font-size: 1.121875em;
-  flex-basis: 68%;
+  font-size: 1em;
+  flex-basis: 80%;
   padding: 0 0.44568245125348194em 0 0.8356545961002786em;
+}
+@media (min-width: 460px) {
+  /* line 29, ../sass/custom/_benefits.scss */
+  .benefits .text {
+    font-size: 1.121875em;
+  }
+}
+@media (min-width: 576px) {
+  /* line 37, ../sass/custom/_benefits.scss */
+  .benefits {
+    display: flex;
+  }
+  /* line 41, ../sass/custom/_benefits.scss */
+  .benefits li {
+    flex-basis: 50%;
+  }
+  /* line 45, ../sass/custom/_benefits.scss */
+  .benefits .image {
+    text-align: center;
+    flex-basis: 32%;
+  }
+  /* line 50, ../sass/custom/_benefits.scss */
+  .benefits .text {
+    flex-basis: 68%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 58, ../sass/custom/_benefits.scss */
+  .benefits li {
+    flex-basis: 33.33%;
+  }
 }
 
 /* line 1, ../sass/custom/_footer.scss */
@@ -279,44 +405,76 @@ h1:after {
   justify-content: space-between;
   align-items: center;
   padding: 1.875em;
-  height: 7.5em;
+  text-align: center;
+  flex-direction: column;
 }
-/* line 10, ../sass/custom/_footer.scss */
+/* line 11, ../sass/custom/_footer.scss */
+#footer .logo {
+  margin-bottom: 1.25em;
+}
+/* line 15, ../sass/custom/_footer.scss */
 #footer .socials {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 16, ../sass/custom/_footer.scss */
+/* line 21, ../sass/custom/_footer.scss */
 #footer .socials li {
   margin-right: 0.625em;
 }
-/* line 19, ../sass/custom/_footer.scss */
+/* line 24, ../sass/custom/_footer.scss */
 #footer .socials li:last-child {
   margin-right: 0;
 }
-/* line 25, ../sass/custom/_footer.scss */
+/* line 30, ../sass/custom/_footer.scss */
 #footer .socials a {
   text-indent: -9999px;
   display: block;
   width: 36px;
   height: 36px;
 }
-/* line 32, ../sass/custom/_footer.scss */
+/* line 37, ../sass/custom/_footer.scss */
 #footer .socials .fb {
   background-image: url("../images/socials/icon-fb.png");
 }
-/* line 36, ../sass/custom/_footer.scss */
+/* line 41, ../sass/custom/_footer.scss */
 #footer .socials .twitter {
   background-image: url("../images/socials/icon-twitter.png");
 }
-/* line 40, ../sass/custom/_footer.scss */
+/* line 45, ../sass/custom/_footer.scss */
 #footer .socials .youtube {
   background-image: url("../images/socials/icon-yt.png");
 }
-/* line 46, ../sass/custom/_footer.scss */
-#footer address {
-  margin: 0;
+/* line 51, ../sass/custom/_footer.scss */
+#footer .address {
+  margin: 0 0 1.25em 0;
   line-height: 1.6875em;
+}
+
+@media (min-width: 576px) {
+  /* line 60, ../sass/custom/_footer.scss */
+  #footer {
+    max-height: 7.5em;
+    flex-direction: row;
+    text-align: left;
+  }
+  /* line 65, ../sass/custom/_footer.scss */
+  #footer .logo,
+  #footer .socials,
+  #footer .address {
+    margin: 0;
+  }
+  /* line 71, ../sass/custom/_footer.scss */
+  #footer .logo {
+    order: 1;
+  }
+  /* line 75, ../sass/custom/_footer.scss */
+  #footer .socials {
+    order: 2;
+  }
+  /* line 79, ../sass/custom/_footer.scss */
+  #footer .address {
+    order: 3;
+  }
 }

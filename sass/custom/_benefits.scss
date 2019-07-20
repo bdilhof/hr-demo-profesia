@@ -3,27 +3,62 @@
   margin: 2.375em 0 0 0;
   padding: 0;
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
 
   li {
-    flex-basis: 33.33%;
+    flex-basis: 50%;
     display: flex;
     align-items: center;
     padding: 0 0 2.5em 0;
   }
 
   .image {
-    flex-basis: 32%;
-    text-align: center;
+    flex-basis: 20%;
     margin: 0;
   }
 
   .text {
     line-height: 1.5041782729805016em;
-    font-size: 1.121875em;
-    flex-basis: 68%;
+    font-size: 1em;
+    flex-basis: 80%;
     padding: 0 0.44568245125348194em 0 0.8356545961002786em;
+  }
+
+  @media (min-width: 460px) {
+
+    .text {
+      font-size: 1.121875em;
+    }
+
+  }
+
+  @media (min-width: 576px) {
+
+    & {
+      display: flex;
+    }
+
+    li {
+      flex-basis: 50%;
+    }
+
+    .image {
+      text-align: center;
+      flex-basis: 32%;
+    }
+
+    .text {
+      flex-basis: 68%;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    li {
+      flex-basis: 33.33%;
+    }
+
   }
 
 }

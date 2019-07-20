@@ -1,0 +1,48 @@
+#nav {
+
+  height: 3.75em;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  li {
+
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    background: $color-orange;
+    margin-right: 1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  a,
+  a:link,
+  a:active {
+    color: #000;
+    height: 3em;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 1.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+  }
+
+  a:hover,
+  a:active {
+    color: #fff;
+    background: $color-red;
+    font-weight: bold;
+  }
+
+}

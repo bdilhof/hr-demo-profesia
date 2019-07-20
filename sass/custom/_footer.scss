@@ -1,0 +1,51 @@
+#footer {
+  background: #707070;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-main;
+  height: 7.5em;
+
+  .socials {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 0.625em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+    }
+
+    a {
+      text-indent: -9999px;
+      display: block;
+      width: 36px;
+      height: 36px;
+    }
+
+    .fb {
+      background-image: url("../images/socials/icon-fb.png");
+    }
+
+    .twitter {
+      background-image: url("../images/socials/icon-twitter.png");
+    }
+
+    .youtube {
+      background-image: url("../images/socials/icon-yt.png");
+    }
+
+  }
+
+  address {
+    margin: 0;
+    line-height: 1.6875em;
+  }
+
+}

@@ -1,0 +1,38 @@
+.intro-image {
+
+  background: {
+    color: #e1e0dc;
+    image: url('../images/intro-image.png');
+    repeat: no-repeat;
+    position: right;
+    size: contain;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19.25em;
+  padding: 1.4375em 1.625em 1.375em 1.625em;
+
+  p {
+    margin: 0;
+  }
+
+  .big-slogan,
+  .small-slogan {
+    text-transform: uppercase;
+    max-width: 40%;
+    font-weight: bold;
+    color: $color-brown;
+  }
+
+  .big-slogan {
+    font-size: 2.75em;
+    line-height: 0.9772727272727273em;
+  }
+
+  .small-slogan {
+    font-size: 1.25em;
+  }
+
+}

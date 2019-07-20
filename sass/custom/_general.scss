@@ -1,0 +1,55 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  color: $color-red;
+  transition: $transition;
+}
+
+a:hover,
+a:active {
+  color: $color-orange;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6875em;
+}
+
+section {
+  margin: 0;
+}
+
+h1 {
+
+  font-size: 1.8125em;
+  text-transform: uppercase;
+  margin-bottom: 0.4827586206896552em;
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 10.625em;
+    height: 1px;
+    background: $color-orange;
+    margin-top: 0.41379310344827586em;
+  }
+
+}
+
+#main {
+  padding: 2.4375em 1.875em 3.75em 1.875em;
+
+  section {
+    margin: 0 0 2.5em 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+  }
+
+}

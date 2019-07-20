@@ -1,0 +1,54 @@
+.job-opportunities {
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 1.25em;
+    border-bottom: solid 1px #b7b7b7;
+    transition: $transition;
+
+    .heading {
+      font-size: 1em;
+      flex-basis: 90%;
+      margin: 0;
+      padding-right: 1.25em;
+      line-height: 1.375em;
+    }
+
+    .button {
+      background: $color-orange;
+      color: #fff;
+      white-space: nowrap;
+      font-size: 0.875em;
+      padding: 0.536em 1.6428571428571428em;
+    }
+
+    &:nth-child(odd) {
+      background: #e1e1e1;
+    }
+
+    &:hover {
+      background: $color-orange;
+      cursor: pointer;
+
+      .button {
+        color: $color-orange;
+        background: #fff;
+        text-decoration: none;
+      }
+
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    p {
+      flex-basis: 40%;
+      margin: 0;
+    }
+
+  }
+
+}

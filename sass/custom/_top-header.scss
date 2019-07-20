@@ -1,0 +1,61 @@
+.top-header {
+
+  display: flex;
+  align-items: center;
+  padding: 0.9375em $padding-main;
+  max-height: 6.25em;
+
+  .slogan {
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-left: 1.75em;
+    margin-bottom: 0;
+    line-height: 1.6em;
+
+    .big {
+      font-size: 1.45em;
+    }
+
+  }
+
+  .lang-nav {
+
+    font-size: 1.3125em;
+    margin-right: 0.7142857142857143em;
+
+    ul {
+
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+
+        a:link,
+        a:visited {
+          color: #000;
+        }
+
+        a:hover,
+        a:active {
+          color: $color-orange;
+        }
+
+        &:after {
+          content: "|";
+          padding: 0 0.09523809523809523em;
+
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+
+      }
+
+    }
+  }
+
+}
